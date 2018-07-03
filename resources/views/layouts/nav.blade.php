@@ -17,6 +17,11 @@
             <!-- Right Side Of Navbar -->
             <ul class="navbar-nav ml-auto">
                 <!-- Authentication Links -->
+                
+                @section('my_menu')
+                    <li><a class="nav-link" href="/home">{{ __('Home') }}</a></li>
+                @show
+
                 @guest
                 <li class="nav-item">
                     <a class="nav-link" href="{{ route('login') }}">{{ __('Login') }}</a>
