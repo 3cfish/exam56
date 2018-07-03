@@ -17,9 +17,12 @@
             <!-- Right Side Of Navbar -->
             <ul class="navbar-nav ml-auto">
                 <!-- Authentication Links -->
-                
+
                 @section('my_menu')
-                    <li><a class="nav-link" href="/home">{{ __('Home') }}</a></li>
+                @can('後台管理')
+                    <li><a class="nav-link" href="/admin">{{ __('Admin') }}</a></li>
+                @endcan
+                
                 @show
 
                 @guest
