@@ -22,7 +22,11 @@
                 @can('後台管理')
                     <li><a class="nav-link" href="/admin">{{ __('Admin') }}</a></li>
                 @endcan
-                
+
+                @can('建立測驗')
+                <li><a class="nav-link" href="/exam/create">{{ __('Exam Create') }}</a></li>
+                @endcan
+
                 @show
 
                 @guest
