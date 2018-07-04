@@ -18,7 +18,8 @@
                     ->inline())
                     ->showAsRow()
                     }}
-
+                    
+                    {{ bs()->hidden('user_id', Auth::id()) }}
                     {{ bs()->submit('儲存') }}
             
 
