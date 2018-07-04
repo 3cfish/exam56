@@ -1,5 +1,6 @@
 @extends('layouts.app') 
-
 @section('content')
-    <h1>隨機題庫系統</h1>
+    <h1>所有測驗</h1>
+
+    
 @endsection
